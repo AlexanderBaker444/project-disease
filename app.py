@@ -23,7 +23,7 @@ import pandas as pd
 
 
 tabtitle = 'Disease'
-myheading='Which Cities is Disease the Worst?'
+myheading='Is Disease Worse in San Juan (Red) or Iquitos  (Blue)?'
 neighborhood='San Juan'
 color1='red'
 color2='blue'
