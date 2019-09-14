@@ -42,24 +42,43 @@ df_X=pd.read_csv(full_path_X)
 df_Y=pd.read_csv(full_path_Y)
 
 
-# In[5]:
+# In[8]:
 
 
 full_set=pd.merge(df_X,df_Y)
 full_set.columns
 
 
-# In[6]:
+# In[14]:
+
+
+full_set['city_color']=full_set.city.map({'sj':0,'iq':1})
+
+
+# In[15]:
+
+
+full_set['city'].value_counts()
+
+
+# In[16]:
 
 
 trace = go.Scatter(
     x = full_set['reanalysis_dew_point_temp_k'],
     y = full_set['total_cases'],
-    mode='markers'
+    mode='markers',
+    marker=dict(
+        size=8,
+        color = full_set['city_color'], # set color equal to a third variable
+        colorscale=[color1, color2],
+        colorbar=dict(title='city'),
+        showscale=True
+    )
 )
 
 
-# In[7]:
+# In[17]:
 
 
 data = [trace]
@@ -72,7 +91,7 @@ layout = go.Layout(
 fig = go.Figure(data=data, layout=layout)
 
 
-# In[8]:
+# In[18]:
 
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
