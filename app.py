@@ -73,7 +73,7 @@ trace = go.Scatter(
         color = full_set['city_color'], # set color equal to a third variable
         colorscale=[color1, color2],
         colorbar=dict(title='city'),
-        #showscale=True
+        showscale=True
     )
 )
 
