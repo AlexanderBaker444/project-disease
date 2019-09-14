@@ -24,7 +24,7 @@ import pandas as pd
 
 tabtitle = 'Disease'
 myheading='Which Cities is Disease the Worst?'
-neighborhood='Comparison'
+neighborhood='San Juan'
 color1='red'
 color2='blue'
 sourceurl = 'https://www.drivendata.org/competitions/44/dengai-predicting-disease-spread/'
@@ -83,7 +83,7 @@ trace = go.Scatter(
 
 data = [trace]
 layout = go.Layout(
-    title = f'Larger homes cost more in {neighborhood}!', # Graph title
+    title = f'More Fevers are Seen in {neighborhood}!', # Graph title
     xaxis = dict(title = 'Temp of Dew'), # x-axis label
     yaxis = dict(title = 'Disease Cases'), # y-axis label
     hovermode ='closest' # handles multiple points landing on the same vertical
