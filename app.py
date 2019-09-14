@@ -23,10 +23,10 @@ import pandas as pd
 
 
 tabtitle = 'Disease'
-myheading='Analysis of housing prices in Washington DC'
-neighborhood='Placeholder'
-color1='#04F9E6'
-color2='#1B03B1'
+myheading='Which Cities is Disease the Worst?'
+neighborhood='Comparison'
+color1='red'
+color2='blue'
 sourceurl = 'https://www.drivendata.org/competitions/44/dengai-predicting-disease-spread/'
 githublink = 'https://github.com/AlexanderBaker/dash-scatterplot-disease'
 
