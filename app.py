@@ -23,12 +23,12 @@ import pandas as pd
 
 
 tabtitle = 'Disease'
-myheading='Is Disease Worse in San Juan (Red) or Iquitos  (Blue)?'
+myheading='Let Us Look at the Relationships Between Many Variables.'
 neighborhood='San Juan'
 color1='red'
 color2='blue'
 sourceurl = 'https://www.drivendata.org/competitions/44/dengai-predicting-disease-spread/'
-githublink = 'https://github.com/AlexanderBaker/dash-scatterplot-disease'
+githublink = 'https://github.com/AlexanderBaker444/dash-scatterplot-disease'
 
 
 # In[4]:
@@ -83,7 +83,7 @@ trace = go.Scatter(
 
 data = [trace]
 layout = go.Layout(
-    title = f'More Fevers are Seen in {neighborhood}!', # Graph title
+    title = f'Is Dew Warmer with a Higher Percipitation?', # Graph title
     xaxis = dict(title = 'Temp of Dew'), # x-axis label
     yaxis = dict(title = 'Percipitation'), # y-axis label
     hovermode ='closest' # handles multiple points landing on the same vertical
