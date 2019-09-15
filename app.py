@@ -85,7 +85,7 @@ data = [trace]
 layout = go.Layout(
     title = f'More Fevers are Seen in {neighborhood}!', # Graph title
     xaxis = dict(title = 'Temp of Dew'), # x-axis label
-    yaxis = dict(title = 'Disease Cases'), # y-axis label
+    yaxis = dict(title = 'Percipitation'), # y-axis label
     hovermode ='closest' # handles multiple points landing on the same vertical
 )
 fig = go.Figure(data=data, layout=layout)
