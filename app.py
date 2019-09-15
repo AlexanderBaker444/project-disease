@@ -66,13 +66,13 @@ full_set['city'].value_counts()
 
 trace = go.Scatter(
     x = full_set['reanalysis_dew_point_temp_k'],
-    y = full_set['total_cases'],
+    y = full_set['station_precip_mm'],
     mode='markers',
     marker=dict(
         size=8,
-        color = full_set['city_color'], # set color equal to a third variable
+        color = full_set['total_cases'], # set color equal to a third variable
         colorscale=[color1, color2],
-        colorbar=dict(title='city'),
+        colorbar=dict(title='total cases'),
         showscale=True
     )
 )
