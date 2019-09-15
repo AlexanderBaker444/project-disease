@@ -52,7 +52,7 @@ full_set.columns
 # In[14]:
 
 
-full_set['city_color']=full_set.city.map({'sj':2,'iq':4})
+full_set['city_color']=full_set.city.map({'sj':4,'iq':6})
 
 
 # In[15]:
