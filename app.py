@@ -83,7 +83,7 @@ trace = go.Scatter(
 
 data = [trace]
 layout = go.Layout(
-    title = f'Is Dew Warmer with a Higher Percipitation?', # Graph title
+    title = f'San Juan is Blue Iquitos is Red', # Graph title
     xaxis = dict(title = 'Temp of Dew'), # x-axis label
     yaxis = dict(title = 'Percipitation'), # y-axis label
     hovermode ='closest' # handles multiple points landing on the same vertical
