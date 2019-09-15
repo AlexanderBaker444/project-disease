@@ -52,7 +52,7 @@ full_set.columns
 # In[14]:
 
 
-full_set['city_color']=full_set.city.map({'sj':4,'iq':6})
+full_set['city_color']=full_set.city.map({'sj':0,'iq':1})
 
 
 # In[15]:
@@ -69,10 +69,10 @@ trace = go.Scatter(
     y = full_set['station_precip_mm'],
     mode='markers',
     marker=dict(
-        size=full_set['city_color'],
-        color = full_set['total_cases'], # set color equal to a third variable
+        size=full_set['total_cases'],
+        color = full_set['city_color'], # set color equal to a third variable
         colorscale=[color1, color2],
-        colorbar=dict(title='total cases'),
+        colorbar=dict(title='Citys'),
         showscale=True
     )
 )
