@@ -155,7 +155,7 @@ fig.update_yaxes(title_text="humidity percentage", row=1, col=1)
 fig.update_yaxes(title_text="total cases", row=2, col=1)
 fig.update_yaxes(title_text="total cases", row=3, col=1)
 
-fig.update_layout(height=1000, width=800, title_text="First subplot compares the weahter between the two cities, the following two compare the number of cases for each city correlated with the dew temperature.")
+fig.update_layout(height=1000, width=1000, title_text="These subplots are analyzing disease cases and weather.")
 fig.show()
 
 
