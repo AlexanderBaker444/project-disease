@@ -28,7 +28,7 @@ neighborhood='Placeholder'
 color1='red'
 color2='blue'
 sourceurl = 'https://www.drivendata.org/competitions/44/dengai-predicting-disease-spread/'
-githublink = 'https://github.com/AlexanderBaker/dash-scatterplot-disease'
+githublink = 'https://github.com/AlexanderBaker444/dash-scatterplot-disease'
 
 
 # In[17]:
